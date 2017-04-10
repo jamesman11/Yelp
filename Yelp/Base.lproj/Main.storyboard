@@ -121,12 +121,16 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="VBY-gq-v8E" firstAttribute="top" secondItem="K47-cz-VpX" secondAttribute="bottom" id="2HD-4O-bE2"/>
                             <constraint firstItem="K47-cz-VpX" firstAttribute="top" secondItem="XhR-oz-92f" secondAttribute="top" id="OUh-R4-wgT"/>
                             <constraint firstItem="K47-cz-VpX" firstAttribute="leading" secondItem="XhR-oz-92f" secondAttribute="leading" id="Ock-He-ugd"/>
                             <constraint firstAttribute="trailing" secondItem="K47-cz-VpX" secondAttribute="trailing" id="rUM-mw-Yws"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="u1n-x8-31y" appends="YES" id="hAZ-ui-i1o"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Yelp" id="0Qw-Et-fdZ">
                         <barButtonItem key="leftBarButtonItem" title="Filters" id="AaD-sK-Wja">
@@ -140,6 +144,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fgb-4b-F1b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="u1n-x8-31y">
+                    <connections>
+                        <action selector="onTap:" destination="2xI-yr-O5N" id="cXl-aw-Paz"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2645.5999999999999" y="357.57121439280365"/>
         </scene>
